@@ -1,0 +1,21 @@
+// Import Bulma variables and override bellow
+@import "~bulma/sass/utilities/initial-variables";
+
+// Main font family
+$main-font-family: "Comfortaa", cursive;
+$family-primary: $main-font-family;
+// Custom variables
+$blue: #16425B;
+$opposite: #8F381C;
+.blue {
+  color: $blue;
+}
+.blue-bg {
+  background-color: $blue;
+}
+.opposite {
+  color: $opposite;
+}
+.opposite-bg {
+  background-color: $opposite;
+}

@@ -1,0 +1,59 @@
+{
+  "name": "adonis-app",
+  "version": "3.2.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "echo \"\\033[31mWARN: 'start' will be depreciated soon. Instead use 'npm run serve'\" && npm run serve",
+    "dev": "echo \"\\033[31mWARN: 'dev' will be depreciated soon. Instead use 'npm run serve:dev'\" && npm run serve:dev",
+    "serve:dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node server.js",
+    "serve": "node server.js",
+    "lint": "standard",
+    "fdev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fwatch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fhot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "fproduction": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "adonis-ace": "^3.0.7",
+    "adonis-auth": "^1.0.5",
+    "adonis-commands": "^2.1.5",
+    "adonis-fold": "^3.0.3",
+    "adonis-framework": "^3.0.10",
+    "adonis-lucid": "^3.0.14",
+    "adonis-middleware": "^1.0.11",
+    "adonis-validation-provider": "^3.0.5",
+    "adonis-websocket": "^1.0.3",
+    "sqlite3": "^3.1.13",
+    "youch": "^2.0.4"
+  },
+  "standard": {
+    "global": [
+      "use",
+      "make"
+    ]
+  },
+  "autoload": {
+    "App": "./app"
+  },
+  "devDependencies": {
+    "adonis-websocket-client": "^1.0.2",
+    "axios": "^0.17.0",
+    "bulma": "^0.6.0",
+    "laravel-mix": "^1.5.1",
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.1",
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1",
+    "eslint": "latest",
+    "eslint-friendly-formatter": "latest",
+    "eslint-loader": "latest",
+    "eslint-plugin-html": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-standard": "latest"
+  }
+}

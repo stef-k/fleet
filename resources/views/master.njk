@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="/css/app.css">
+  <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+  <title>FLEET</title>
+</head>
+<body>
+
+  {{ csrfField }}
+  <div id="app">
+    <nav-menu></nav-menu>
+      <div class="container-fluid">
+          <router-view></router-view>
+      </div>
+  </div>
+
+<script>
+  // setup a global object for the application
+  window.fleet = window.fleet || {};
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ GMAPS_KEY() }}&language=el&region=GR"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>

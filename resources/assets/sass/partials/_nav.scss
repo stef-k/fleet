@@ -1,0 +1,19 @@
+.navbar {
+  background-color: $blue;
+  z-index: 100;
+  a {
+    color: $light;
+    &:hover {
+      background-color: darken($blue, 5%);
+      color: $light;
+    }
+  }
+  a.navbar-item.is-active {
+    color: $light;
+    background-color: $opposite;
+    &:hover {
+      background-color: darken($opposite, 10%);
+    }
+  }
+}
+

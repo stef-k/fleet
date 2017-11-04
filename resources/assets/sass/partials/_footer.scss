@@ -1,0 +1,19 @@
+.the-footer {
+  .footer-brand {
+    color: lighten($opposite, 25%);
+    font-weight: bold;
+  }
+  font-size: 12px;
+  // font-family: monospace;
+  color: $light;
+  background-color: $blue;
+  height: 18px;
+  z-index: 1;
+  a {
+    color: $light;
+    text-decoration: underline;
+    &:hover{
+      color: lighten($opposite, 30%);
+    }
+  }
+}
