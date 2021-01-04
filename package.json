@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "adonis-websocket-client": "^1.0.2",
-    "axios": "^0.17.0",
+    "axios": "^0.21.1",
     "bulma": "^0.6.0",
     "laravel-mix": "^1.5.1",
     "nodemon": "^1.11.0",
